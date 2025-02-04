@@ -99,10 +99,10 @@
             </div>           
         </div>
         <!-- Grid containers -->
-        <div class="flex gap-[1rem] mx-8 absolute mt-[32px] ">
+        <div class="flex  gap-[1rem] mx-8 absolute mt-[32px] ">
             <!-- NO. 1 -->
             <div class="grid left-0 top-0 rounded-xl bg-[#EBF3FE] ">
-                <div class="bg-contain bg-no-repeat h-[430px] mt-[37px] mr-[23px]" style="background-image: url('/collaboration tools.png');"></div>
+                <div class="bg-cover bg-no-repeat bg-[length: 100%_100%] h-[365px] mt-[37px] mr-[23px]" style="background-image: url('/collaboration tools.png');"></div>
             <p class="text-[18px] ml-[22px] mt-[20px] text-[#475467] ">
               <b class="font-semibold font-Intrumentsans text-black">Collaboration tools</b
               ><br />
@@ -114,7 +114,8 @@
           </div>
         <!-- NO. 2 -->
         <div class="grid left-0 top-0 rounded-xl bg-[#EBEFFF] relative">
-                <div class="bg-contain bg-no-repeat h-[430px] mt-[37px] ml-[23px]" style="background-image: url('/Digital signatures.png');"></div>
+                <div class="bg-cover bg-no-repeat bg-[length: 100%_100%] h-[365px] 
+                 mt-[37px] ml-[23px]" style="background-image: url('/Digital signatures.png');"></div>
             <p class="text-[18px] ml-[22px] mt-[20px] text-[#475467] ">
               <b class="font-semibold font-Intrumentsans text-black ">Digital Signatures</b
               ><br />
@@ -123,8 +124,8 @@
           </div>
         <!-- NO. 3 -->
         <div class="grid left-0 top-0 rounded-xl bg-[#EBF3FE] relative">
-                <div class="bg-contain bg-no-repeat h-[430px] mt-[37px]" style="background-image: url('/notifications.png');"></div>
-            <p class="text-[18px] ml-[22px] mt-[20px] text-[#475467] ">
+                <div class="bg-cover bg-no-repeat bg-[length: 100%_100%] h-[365px]  mt-[37px]" style="background-image: url('/notifications.png');"></div>
+            <p class="text-[18px] ml-[22px] mt-[40px] text-[#475467] ">
               <b class="font-semibold font-Intrumentsans text-black">Notifications</b
               ><br />
               Real-time notifications for instant updates and alerts, keeping users informed. These timely notifications enable prompt responses and facilitate immediate action.
@@ -132,7 +133,7 @@
           </div>
         <!-- NO. 4 -->
         <div class="grid left-0 top-0 rounded-xl bg-[#F6EEFF] relative">
-                <div class="bg-contain bg-no-repeat h-[430px] mt-[37px] mr-[23px]" style="background-image: url('/automatic workflows.png');"></div>
+                <div class="bg-cover bg-no-repeat bg-[length: 100%_100%] h-[365px]  mt-[37px] mr-[23px]" style="background-image: url('/automatic workflows.png');"></div>
             <p class="text-[18px] ml-[22px] mt-[20px] text-[#475467] ">
               <b class="font-semibold font-Intrumentsans text-black">Automated Workflows</b
               ><br />
@@ -141,7 +142,9 @@
           </div>
 
             </div>
-
+            <div>
+                
+            </div>
         
        
     </div>
