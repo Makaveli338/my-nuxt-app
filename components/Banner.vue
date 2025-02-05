@@ -58,7 +58,7 @@
           
           <div class="h-[30px]"></div>
       
-          <div class="h-[720px] bg-no-repeat bg-contain absolute w-full -bottom-[320px] mx-auto left-0 right-0 bg-center" style="background-image: url('/Group 1171274937.png');"></div>
+          <div class="h-[720px] bg-no-repeat bg-contain  w-full absolute top-[400px] mx-auto left-0 right-0 bg-center" style="background-image: url('/Group 1171274937.png');"></div>
           
           <div class="bg-contain bg-no-repeat size-[300px] absolute bottom-0" style="background-image: url('/img/v1.png');"></div>
           <div class="bg-contain bg-no-repeat size-[300px] absolute bottom-0 right-0" style="background-image: url('/img/v2.png');"></div>
@@ -99,7 +99,7 @@
             </div>           
         </div>
         <!-- Grid containers -->
-        <div class="flex  gap-[1rem] mx-8 absolute mt-[32px] ">
+        <div class="flex  flex-col md:flex-row md:items-center gap-[1rem] mx-8 absolute mt-[32px] ">
             <!-- NO. 1 -->
             <div class="grid left-0 top-0 rounded-xl bg-[#EBF3FE] ">
                 <div class="bg-cover bg-no-repeat bg-[length: 100%_100%] h-[365px] mt-[37px] mr-[23px]" style="background-image: url('/collaboration tools.png');"></div>
@@ -123,27 +123,143 @@
             </p>
           </div>
         <!-- NO. 3 -->
-        <div class="grid left-0 top-0 rounded-xl bg-[#EBF3FE] relative">
-                <div class="bg-cover bg-no-repeat bg-[length: 100%_100%] h-[365px]  mt-[37px]" style="background-image: url('/notifications.png');"></div>
-            <p class="text-[18px] ml-[22px] mt-[40px] text-[#475467] ">
+         <div class="grid left-0 top-0 rounded-xl bg-[#EBF3FE] ">
+                <div class="bg-cover bg-no-repeat bg-[length: 100%_100%] h-[365px] mt-[37px] " style="background-image: url('/collaboration tools.png');"></div>
+            <p class="text-[18px] ml-[22px] mt-[20px] text-[#475467] ">
+              <b class="font-semibold font-Intrumentsans text-black">Collaboration tools</b
+              ><br />
+              Seamless interagency collaboration in real-time to improve
+              efficiency and productivity. Drafting, version control,
+              commenting, and simultaneous editing within the defined Cabinet
+              Memo workflow.
+            </p>
+          </div>
+        <!-- NO. 4 -->
+        <div class="grid left-0 top-0 rounded-xl bg-[#F6EEFF] relative">
+                <div class="bg-cover bg-no-repeat bg-[length: 100%_100%] h-[365px]  mt-[37px] mr-[23px]" style="background-image: url('/notifications.png');"></div>
+            <p class="text-[18px] ml-[22px] mt-[20px] text-[#475467] ">
               <b class="font-semibold font-Intrumentsans text-black">Notifications</b
               ><br />
               Real-time notifications for instant updates and alerts, keeping users informed. These timely notifications enable prompt responses and facilitate immediate action.
             </p>
           </div>
-        <!-- NO. 4 -->
-        <div class="grid left-0 top-0 rounded-xl bg-[#F6EEFF] relative">
-                <div class="bg-cover bg-no-repeat bg-[length: 100%_100%] h-[365px]  mt-[37px] mr-[23px]" style="background-image: url('/automatic workflows.png');"></div>
-            <p class="text-[18px] ml-[22px] mt-[20px] text-[#475467] ">
-              <b class="font-semibold font-Intrumentsans text-black">Automated Workflows</b
-              ><br />
-              Replacing manual processes with automated workflows to save time. Tasks and process between team members, real-time tracking to improve efficiency and accountability.
-            </p>
-          </div>
 
             </div>
-            <div>
+            <!-- Lower section -->             
+            <div class=" mt-[2500px] md:mt-[795px] container">
+              <div> 
+              <p class="font-medium text-[#0064E7] gap-2 text-[16px] flex text-center justify-center" >
+                <img src="public/Rectangle 5720.svg" >
+                Q & A
+              </p>
+          <p class="font-semibold text-[24px] text-center">
+            Transparent service delivery through answering your burning
+            questions
+          </p>
+        </div>
+        <div class=" mt-[61px] mx-8">
+          <!-- N0 1. -->
+          <div
+            class= "border border-[#E1E4EA] content-center justify-center h-[48px] hover:bg-[#D6D3FF] rounded-[10px] mx-25 ">   
+          <p class="font-medium text-[14px] ml-[13px]  flex ">
+            <img class="ml-4" src="public/Fingerprint.svg">
+              <span class="ml-2">How is verification done?</span>
+              <svg class=" absolute ml-[85%] my-auto" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.25 9.25V4.75H10.75V9.25H15.25V10.75H10.75V15.25H9.25V10.75H4.75V9.25H9.25Z" fill="#99A0AE"/>
+              </svg>
+            </p>          
+          </div>
+           <!-- NO 2. -->
+          <div
+            class= " mt-4 border border-[#E1E4EA] content-center justify-center h-[48px] hover:bg-[#D6D3FF] rounded-[10px] mx-25 ">   
+          <p class="font-medium text-[14px] ml-[13px]  flex ">
+            <img class="ml-4" src="public/quill-pen-fill.svg">
+              <span class="ml-2">How can I track signatories' action on my document?</span>
+              <svg class=" absolute ml-[85%] my-auto" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.25 9.25V4.75H10.75V9.25H15.25V10.75H10.75V15.25H9.25V10.75H4.75V9.25H9.25Z" fill="#99A0AE"/>
+              </svg>
+            </p>          
+          </div>
+        <!-- NO 3. -->
+          <div
+            class= "mt-4 border border-[#E1E4EA] content-center justify-center h-[48px] hover:bg-[#D6D3FF] rounded-[10px] mx-25 ">   
+          <p class="font-medium text-[14px] ml-[13px]  flex ">
+            <img class="ml-4" src="public/bell-fill.svg">
+              <span class="ml-2">How can I track signatories' action on my document?</span>
+              <svg class=" absolute ml-[85%] my-auto" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.25 9.25V4.75H10.75V9.25H15.25V10.75H10.75V15.25H9.25V10.75H4.75V9.25H9.25Z" fill="#99A0AE"/>
+              </svg>
+            </p>          
+          </div>
+          <!-- NO 4. -->
+          <div
+            class= " mt-4 border border-[#E1E4EA] content-center justify-center h-[48px] hover:bg-[#D6D3FF] rounded-[10px] mx-25 ">   
+          <p class="font-medium text-[14px] ml-[13px]  flex ">
+            <img class="ml-4" src="public/quill-pen-fill.svg">
+              <span class="ml-2">How do I initiate a new signature request</span>
+              <svg class=" absolute ml-[85%] my-auto" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.25 9.25V4.75H10.75V9.25H15.25V10.75H10.75V15.25H9.25V10.75H4.75V9.25H9.25Z" fill="#99A0AE"/>
+              </svg>
+            </p>          
+          </div>
+          <!-- NO 5.  -->
+          <div
+            class= " mt-4 border border-[#E1E4EA] content-center justify-center h-[48px] hover:bg-[#D6D3FF] rounded-[10px] mx-25 ">   
+          <p class="font-medium text-[14px] ml-[13px]  flex ">
+            <img class="ml-4" src="public/calendar-schedule-fill.svg">
+              <span class="ml-2">Is there a way to view my past signature request?</span>
+              <svg class=" absolute ml-[85%] my-auto" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.25 9.25V4.75H10.75V9.25H15.25V10.75H10.75V15.25H9.25V10.75H4.75V9.25H9.25Z" fill="#99A0AE"/>
+              </svg>
+            </p>          
+          </div>
+          <!-- NO 6. -->
+          <div
+            class= "mt-4 border border-[#E1E4EA] content-center justify-center h-[48px] hover:bg-[#D6D3FF] rounded-[10px] mx-25 ">   
+          <p class="font-medium text-[14px] ml-[13px]  flex ">
+            <img class="ml-4" src="public/vector.svg">
+              <span class="ml-2">What file formats are supported for document uploads?</span>
+              <svg class=" absolute ml-[85%] my-auto" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.25 9.25V4.75H10.75V9.25H15.25V10.75H10.75V15.25H9.25V10.75H4.75V9.25H9.25Z" fill="#99A0AE"/>
+              </svg>
+            </p>          
+          </div>
+          <!-- N0 7. -->
+          <div
+            class= "mt-4 border border-[#E1E4EA] content-center justify-center h-[48px] hover:bg-[#D6D3FF] rounded-[10px] mx-25 ">   
+          <p class="font-medium text-[14px] ml-[13px]  flex ">
+            <img class="ml-4" src="public/user.svg">
+              <span class="ml-2">How can I track signatories' action on my document?</span>
+              <svg class=" absolute ml-[85%] my-auto" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.25 9.25V4.75H10.75V9.25H15.25V10.75H10.75V15.25H9.25V10.75H4.75V9.25H9.25Z" fill="#99A0AE"/>
+              </svg>
+            </p>          
+          </div>
+          <!-- NO 8. -->
+          <div
+            class= "mt-4 border border-[#E1E4EA] content-center justify-center h-[48px] hover:bg-[#D6D3FF] rounded-[10px] mx-25 ">   
+          <p class="font-medium text-[14px] ml-[13px]  flex ">
+            <img class="ml-4" src="public/scales-line.svg">
+              <span class="ml-2">Is my digital signature legally binding?</span>
+              <svg class=" absolute ml-[85%] my-auto" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.25 9.25V4.75H10.75V9.25H15.25V10.75H10.75V15.25H9.25V10.75H4.75V9.25H9.25Z" fill="#99A0AE"/>
+              </svg>
+            </p>          
+          </div>
+          <!-- NO 9. -->
+          <div
+            class= "mt-4 border border-[#E1E4EA] content-center justify-center h-[48px] hover:bg-[#D6D3FF] rounded-[10px] mx-25 ">   
+          <p class="font-medium text-[14px] ml-[13px]  flex ">
+            <img class="ml-4" src="public/phone.svg">
+              <span class="ml-2">Can I sign documents on mobile devices?</span>
+              <svg class=" absolute ml-[85%] my-auto" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.25 9.25V4.75H10.75V9.25H15.25V10.75H10.75V15.25H9.25V10.75H4.75V9.25H9.25Z" fill="#99A0AE"/>
+              </svg>
+            </p>          
+          </div>
+        
                 
+            </div>
             </div>
         
        
