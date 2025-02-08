@@ -1,6 +1,6 @@
 <template>
   <!-- Hero section -->
-   <div class="p-8">
+   <div>
     <Banner />
 
     <div class="h-[300px]"></div>
