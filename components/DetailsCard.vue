@@ -1,8 +1,8 @@
 <!-- DetailsCard.vue -->
 <template>
-    <div :style="{ backgroundColor: bg_color }" class="details-card text-xl">
-      <img :src=picture_src />
-      <h2 class="font-semibold text-black mb-4">{{ heading }}</h2>
+    <div :style="{ backgroundColor: bg_color }" class="details-card text-xl flex flex-col gap-4">
+      <div :class="['h-[300px] bg-cover bg-no-repeat', img_class]" :style="`background-image: url(${img})`"></div>
+      <h2 class="font-semibold text-black">{{ heading }}</h2>
       <h3 class="font-normal text-[#475467]">{{ card_title }}</h3>
     </div>
   </template>
@@ -13,6 +13,10 @@
       img: {
         type: String,
         required: true, // Ensure the image URL is provided
+      },
+      img_class: {
+        type: String,
+        default: '',
       },
       bg_color: {
         type: String,
