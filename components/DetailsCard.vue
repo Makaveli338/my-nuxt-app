@@ -2,9 +2,11 @@
 <template>
     <div :style="{ backgroundColor: bg_color }" class="details-card text-xl flex flex-col gap-4">
       <div :class="['h-[300px] bg-cover bg-no-repeat', img_class]" :style="`background-image: url(${img})`"></div>
-      <h2 class="font-semibold text-black">{{ heading }}</h2>
-      <h3 class="font-normal text-[#475467]">{{ card_title }}</h3>
+      <div class="-ml-[20px] -mr-[20px] shadow-[0_-80px_5px_rgba(235,243,254,0.8)]">
+      <h2 class="font-semibold text-black mx-4 ">{{ heading }}</h2>
+      <h3 class="font-normal text-[#475467] mx-4 ">{{ card_title }}</h3>
     </div>
+  </div>
   </template>
   
   <script>

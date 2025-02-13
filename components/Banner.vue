@@ -125,7 +125,7 @@
       <DetailsCard
         :img="'/collaboration-tools.png'"
         img_class="-ml-[20px]"
-        :bg_color="'#EBEFFF'"
+        :bg_color="' #EBF3FE'"
         :heading="'Collaborations tools'"
         :card_title="'Seamless interagency collaboration in real-time to improve efficiency and productivity. Drafting, version control, commenting, and simultaneous editing within the defined Cabinet Memo workflow.'"
       />
@@ -133,10 +133,12 @@
       <DetailsCard
         :img="'/Digital-signatures.png'"
         img_class="-mr-[20px]"
-        :bg_color="' #EBEFFF'"
+        :bg_color="'#EBEFFF'"
         :heading="'Digital signatures'"
         :card_title="'Electronic identity verification to ensure document integrity and preventing tampering. Digital signing is integrated within the workflows to reducing reliance on paper.'"
       />
+      
+
       <!-- NO. 3 -->
       <DetailsCard
         :img="'notifications.png'"
@@ -149,7 +151,7 @@
       <DetailsCard
         :img="'/automatic-workflows.png'"
         img_class="-mr-[20px]"
-        :bg_color="' #EBF3FE'"
+        :bg_color="' #F6EEFF'"
         :heading="'Automated Workflows'"
         :card_title="'Replacing manual processes with automated workflows to save time. Tasks and process between team members, real-time tracking to improve efficiency and accountability.'"
       />
@@ -169,216 +171,71 @@
       </div>
       <div class="mt-[61px] mx-8">
         <!-- N0 1. -->
-        <div
-          class="border border-[#E1E4EA] content-center justify-center h-[48px] hover:bg-[#D6D3FF] rounded-[10px] mx-25 relative"
-        >
-          <p
-            class="font-medium text-[14px] ml-[13px] flex [text-decoration-skip-ink:none]"
-          >
-            <img class="ml-4" src="public/Fingerprint.svg" />
-            <span class="ml-2">How is verification done?</span>
-            <svg 
-              class="absolute ml-[96%] my-auto"
-              width="20"
-              height="20"
-              viewBox="0 0 20 20"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M9.25 9.25V4.75H10.75V9.25H15.25V10.75H10.75V15.25H9.25V10.75H4.75V9.25H9.25Z"
-                fill="#99A0AE"
-              />
-            </svg>
-          </p>
+      <DropDowns
+        :img="'/Fingerprint.svg'"
+        :title="'How is verification done?'"
+        :card_title="'Verification is completed through the eCitizen verification system, ensuring secure and authenticated access.'"
+        
+      />
+      <!-- N0 2 -->
+      <DropDowns
+        :img="'/quill-pen-fill.svg'"
+        :title="'How can I track signatories action on my document?'"
+        :card_title="'You can monitor signatures through both the audit log and document information section, which show real-time signing status.'"
+        
+      />
+      <!-- N0 3 -->
+      <DropDowns
+        :img="'/bell-fill.svg'"
+        :title="'How will I know when I receive a signature request?'"
+        :card_title="'Youll receive account notifications whenever a new signature request arrives for your attention.'"
+        
+      />
+      <!-- N0 4 -->
+      <DropDowns
+        :img="'/quill-pen-fill.svg'"
+        :title="'How do I initiate a new signature request?'"
+        :card_title="'Navigate to the upload tab, upload your document, and add the relevant information. Lastly, specify signatories and send your request.'"
+        
+      />
+      <!-- N0 5 -->
+      <DropDowns
+        :img="'/calendar-schedule-fill.svg'"
+        :title="'Is there a way to view my past signature requests?'"
+        :card_title="'Yes, the history tab provides a comprehensive record of all documents youve signed, making it easy to track and reference previous signatures'"
+        
+      />
+      <!--N0 6 -->
+      <DropDowns
+        :img="'/vector.svg'"
+        :title="'What file formats are supported for document uploads?'"
+        :card_title="'PDF, Word documents (.docx), and image files (JPG, PNG) are supported formats for signature requests.'"
+        
+      />
+      <!--N0 7 -->
+      <DropDowns
+      :img="'/user.svg'"
+      :title="'Can I add multiple signatories to one document?'"
+      :card_title="'Yes, you can add multiple signatories to a single document. Each signatory will receive their own notification and can sign in their designated order.'"
+      />
+
+      <!--N0 8 -->
+      <DropDowns
+      :img="'/scales-line.svg'"
+      :title="'Is there a way to view my past signature requests?'"
+      :card_title="'Yes, the history tab provides a comprehensive record of all documents youve signed, making it easy to track and reference previous signatures'"
+      
+      />
+      <!--N0 9 -->
+      <DropDowns
+        :img="'/phone.svg'"
+        :title="'Can I sign documents on mobile devices?'"
+        :card_title="'Yes, our platform is mobile-responsive. You can sign documents on any smartphone or tablet with an internet connection.'"
+        
+      />
+
+
         </div>
-        <!-- NO 2. -->
-        <div
-          class="mt-4 border border-[#E1E4EA] content-center justify-center h-[48px] hover:bg-[#D6D3FF] rounded-[10px] mx-25 relative"
-        >
-          <p class="font-medium text-[14px] ml-[13px] flex">
-            <img class="ml-4" src="public/quill-pen-fill.svg" />
-            <span class="ml-2"
-              >How can I track signatories' action on my document?</span
-            >
-            <svg
-              class="absolute ml-[96%] my-auto"
-              width="20"
-              height="20"
-              viewBox="0 0 20 20"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M9.25 9.25V4.75H10.75V9.25H15.25V10.75H10.75V15.25H9.25V10.75H4.75V9.25H9.25Z"
-                fill="#99A0AE"
-              />
-            </svg>
-          </p>
-        </div>
-        <!-- NO 3. -->
-        <div
-          class="mt-4 border border-[#E1E4EA] content-center justify-center h-[48px] hover:bg-[#D6D3FF] rounded-[10px] mx-25 relative"
-        >
-          <p class="font-medium text-[14px] ml-[13px] flex">
-            <img class="ml-4" src="public/bell-fill.svg" />
-            <span class="ml-2"
-              >How can I track signatories' action on my document?</span
-            >
-            <svg
-              class="absolute ml-[96%] my-auto"
-              width="20"
-              height="20"
-              viewBox="0 0 20 20"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M9.25 9.25V4.75H10.75V9.25H15.25V10.75H10.75V15.25H9.25V10.75H4.75V9.25H9.25Z"
-                fill="#99A0AE"
-              />
-            </svg>
-          </p>
-        </div>
-        <!-- NO 4. -->
-        <div
-          class="mt-4 border border-[#E1E4EA] content-center justify-center h-[48px] hover:bg-[#D6D3FF] rounded-[10px] mx-25 relative"
-        >
-          <p class="font-medium text-[14px] ml-[13px] flex">
-            <img class="ml-4" src="public/quill-pen-fill.svg" />
-            <span class="ml-2">How do I initiate a new signature request</span>
-            <svg
-              class="absolute ml-[96%] my-auto"
-              width="20"
-              height="20"
-              viewBox="0 0 20 20"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M9.25 9.25V4.75H10.75V9.25H15.25V10.75H10.75V15.25H9.25V10.75H4.75V9.25H9.25Z"
-                fill="#99A0AE"
-              />
-            </svg>
-          </p>
-        </div>
-        <!-- NO 5.  -->
-        <div
-          class="mt-4 border border-[#E1E4EA] content-center justify-center h-[48px] hover:bg-[#D6D3FF] rounded-[10px] mx-25 relative"
-        >
-          <p class="font-medium text-[14px] ml-[13px] flex">
-            <img class="ml-4" src="public/calendar-schedule-fill.svg" />
-            <span class="ml-2"
-              >Is there a way to view my past signature request?</span
-            >
-            <svg
-              class="absolute ml-[96%] my-auto"
-              width="20"
-              height="20"
-              viewBox="0 0 20 20"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M9.25 9.25V4.75H10.75V9.25H15.25V10.75H10.75V15.25H9.25V10.75H4.75V9.25H9.25Z"
-                fill="#99A0AE"
-              />
-            </svg>
-          </p>
-        </div>
-        <!-- NO 6. -->
-        <div
-          class="mt-4 border border-[#E1E4EA] content-center justify-center h-[48px] hover:bg-[#D6D3FF] rounded-[10px] mx-25 relative"
-        >
-          <p class="font-medium text-[14px] ml-[13px] flex">
-            <img class="ml-4" src="public/vector.svg" />
-            <span class="ml-2"
-              >What file formats are supported for document uploads?</span
-            >
-            <svg
-              class="absolute ml-[96%] my-auto"
-              width="20"
-              height="20"
-              viewBox="0 0 20 20"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M9.25 9.25V4.75H10.75V9.25H15.25V10.75H10.75V15.25H9.25V10.75H4.75V9.25H9.25Z"
-                fill="#99A0AE"
-              />
-            </svg>
-          </p>
-        </div>
-        <!-- N0 7. -->
-        <div
-          class="mt-4 border border-[#E1E4EA] content-center justify-center h-[48px] hover:bg-[#D6D3FF] rounded-[10px] mx-25 relative"
-        >
-          <p class="font-medium text-[14px] ml-[13px] flex">
-            <img class="ml-4" src="public/user.svg" />
-            <span class="ml-2"
-              >How can I track signatories' action on my document?</span
-            >
-            <svg
-              class="absolute ml-[96%] my-auto"
-              width="20"
-              height="20"
-              viewBox="0 0 20 20"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M9.25 9.25V4.75H10.75V9.25H15.25V10.75H10.75V15.25H9.25V10.75H4.75V9.25H9.25Z"
-                fill="#99A0AE"
-              />
-            </svg>
-          </p>
-        </div>
-        <!-- NO 8. -->
-        <div
-          class="mt-4 border border-[#E1E4EA] content-center justify-center h-[48px] hover:bg-[#D6D3FF] rounded-[10px] mx-25 relative"
-        >
-          <p class="font-medium text-[14px] ml-[13px] flex">
-            <img class="ml-4" src="public/scales-line.svg" />
-            <span class="ml-2">Is my digital signature legally binding?</span>
-            <svg
-              class="absolute ml-[96%] my-auto"
-              width="20"
-              height="20"
-              viewBox="0 0 20 20"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M9.25 9.25V4.75H10.75V9.25H15.25V10.75H10.75V15.25H9.25V10.75H4.75V9.25H9.25Z"
-                fill="#99A0AE"
-              />
-            </svg>
-          </p>
-        </div>
-        <!-- NO 9. -->
-        <div
-          class="mt-4 border border-[#E1E4EA] content-center justify-center h-[48px] hover:bg-[#D6D3FF] rounded-[10px] mx-25 relative"
-        >
-          <p class="font-medium text-[14px] ml-[13px] flex">
-            <img class="ml-4" src="public/phone.svg" />
-            <span class="ml-2">Can I sign documents on mobile devices?</span>
-            <svg
-              class="absolute ml-[96%] my-auto"
-              width="20"
-              height="20"
-              viewBox="0 0 20 20"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M9.25 9.25V4.75H10.75V9.25H15.25V10.75H10.75V15.25H9.25V10.75H4.75V9.25H9.25Z"
-                fill="#99A0AE"
-              />
-            </svg>
-          </p>
-        </div>
-      </div>
 
       <!-- footer -->
       <div
@@ -455,4 +312,5 @@
 <script setup>
 import Header from "@/components/Header.vue";
 import DetailsCard from "@/components/DetailsCard.vue";
+import DropDowns from "@/components/Dropdowns.vue";
 </script>
