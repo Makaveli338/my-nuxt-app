@@ -1,6 +1,6 @@
 <template>
   <div
-    class=" flex mt-5 border border-[#E1E4EA] rounded-[10px] mx-25 h-12 relative text-sm font-medium cursor-pointer hover:bg-[#D6D3FF]"
+    class=" flex mt-8 border border-[#E1E4EA] rounded-[10px] mx-25 h-12 relative text-sm font-medium cursor-pointer hover:bg-[#D6D3FF]"
     @click="toggleDropdown" 
     :class="dropdownContainerClass"
   >
@@ -23,10 +23,10 @@
       </svg>
     <div
       v-if="isOpen"
-      class=" z-10 mb-8 w-full h-10 bg-white border border-[#E1E4EA] rounded-[10px] top-[48px] left-0"
+      class="absolute z-10 mb-8 w-full p-1 bg-white border border-[#E1E4EA] rounded-[10px] top-[48px] left-0"
     >
-      <slot class= "relative top-16 left-4 mb-6" >
-        <h3>{{ card_title }}</h3>
+      <slot>
+        <h3 class="ml-2 ">{{ card_title }}</h3>
       </slot>
     </div>
   </div>
