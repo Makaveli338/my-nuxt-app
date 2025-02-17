@@ -237,10 +237,10 @@
         class="bg-[#0C1431] flex flex-col items-center justify-center h-auto md:mt-[100px] relative sm/md:w-full"
       >
         <div
-          class="bg-contain bg-no-repeat h-[924px] w-[100%]"
+          class="bg-contain bg-no-repeat h-[924px] w-[100%] "
           style="background-image: url('/withgradient.png')"
         ></div>
-        <div class="text-center max-w-[769px] md:absolute">
+        <div class="text-center max-w-[769px] absolute top-[500px]">
           <h1
             class="text-3xl md:text-4xl font-semibold text-white lg:text-6xl leading-10 lg:leading-[74px]"
           >
@@ -278,7 +278,7 @@
           </button>
         </div>
         <div
-          class="mt-[218px] w-[85%] h-[136px] flex text-white font-normal text-[16px] font-[inter,sans-serif] relative"
+          class="mt-[90px] w-[85%] h-[136px] flex text-white font-normal text-[16px] font-[inter,sans-serif] relative"
         >
           <div class="grid">
             <img src="public/image 64.svg" />
