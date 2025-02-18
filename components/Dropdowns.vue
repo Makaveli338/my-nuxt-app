@@ -1,8 +1,6 @@
 <template>
   <div
     class=" grid mt-5 border border-[#E1E4EA] rounded-[10px] mx-25 h-12 relative text-sm font-medium cursor-pointer hover:bg-[#D6D3FF]"
-    @click="toggleDropdown" 
-    :class="dropdownContainerClass"
   >
     <div class="flex items-center">
       <div
@@ -21,7 +19,7 @@
       >
         <path :d="iconPath" fill="#99A0AE" />
       </svg>
-  </div>
+  </div> 
 
     <div
       v-if="isOpen"
@@ -76,3 +74,4 @@ export default {
   margin-bottom: 0;
 }
 </style>
+

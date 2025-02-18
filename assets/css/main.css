@@ -1,5 +1,5 @@
 button {
-    @apply duration-300 cursor-pointer py-[10px] px-[18px] text-sm flex items-center gap-2;
+    @apply duration-300 cursor-pointer py-[10px] px-[18px] md:text-sm flex items-center gap-2 text-xs ;
 }
 
 .btn-outline {
