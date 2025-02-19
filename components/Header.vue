@@ -6,8 +6,18 @@
 
       <div class="flex items-center justify-end gap-4">
         <button class="btn-outline">OTP Log in</button>
-        <button class="btn-primary">eCitizen Log in</button>
+        <button @click="navigateToLogin" class="btn-primary">eCitizen Log in</button>
       </div>
     </div>
   </template>
+
+<script setup>
+import { useRouter } from 'vue-router';
+
+const router = useRouter();
+
+function navigateToLogin() {
+  router.push('/login');
+}
+</script>
   
