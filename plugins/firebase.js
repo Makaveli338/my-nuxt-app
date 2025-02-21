@@ -16,6 +16,7 @@ export default defineNuxtPlugin(() => {
   const app = initializeApp(firebaseConfig);
   const auth = getAuth(app);
   const db = getFirestore(app);
+  // const todosCollection = db.collection('todos');
 
   return {
     provide: {
