@@ -2,24 +2,27 @@
 import { ref, onMounted } from 'vue';
 import { getAuth, signOut } from 'firebase/auth';
 import { useRouter } from 'vue-router';
-import { collection, addDoc, getDocs, deleteDoc, doc } from 'firebase/firestore';
 import { useNuxtApp } from '#app';
+import { useTodoStore } from '@/stores/todoStore';
+import { collection, addDoc, getDocs, deleteDoc, doc, Firestore } from 'firebase/firestore';
 
 const { $db } = useNuxtApp();
+const db = $db as Firestore; // Explicitly define the type of $db as Firestore
 const auth = getAuth();
 const router = useRouter();
+const userName = ref('');
 const newTodo = ref('');
 const todos = ref<{ id: string; text: string; completed: boolean; createdAt: Date }[]>([]);
-const userName = ref('');
+const todoStore = useTodoStore();
+const todoCount = computed(() => todos.value.length);
 
 onMounted(() => {
-  fetchTodos(); // Fetch todos when the component is mounted
-
   // Retrieve the user's display name from Firebase Auth
   const user = auth.currentUser;
   if (user) {
     userName.value = user.displayName || 'User'; // Set the user's display name or a default value
   }
+  todoStore.fetchTodos();
 });
 
 function signOutUser() {
@@ -31,42 +34,19 @@ function signOutUser() {
       console.error('Error signing out:', error);
     });
 }
-
 async function addTodo() {
-  try {
-    await addDoc(collection($db, 'todos'), {
-      text: newTodo.value,
-      completed: false,
-      createdAt: new Date()
-    });
-    newTodo.value = ''; // Clear the input after adding the todo
-    fetchTodos(); // Fetch todos again to update the list
-  } catch (error) {
-    console.error('Error adding todo:', error);
+  if (newTodo.value.trim() === '') {
+    return;
   }
+  await todoStore.addTodo(newTodo.value);
+  newTodo.value = '';
 }
 
-async function fetchTodos() {
-  try {
-    const querySnapshot = await getDocs(collection($db, 'todos'));
-    todos.value = querySnapshot.docs.map(doc => ({ id: doc.id, ...doc.data() })) as { id: string; text: string; completed: boolean; createdAt: Date }[];
-  } catch (error) {
-    console.error('Error fetching todos:', error);
-  }
+async function deleteTodo(id: string) {
+  await todoStore.deleteTodo(id);
 }
 
-async function deleteTodo(id:string) {
-  try {
-    await deleteDoc(doc($db, 'todos', id));
-    fetchTodos(); // Fetch todos again to update the list
-  } catch (error) {
-    console.error('Error deleting todo:', error);
-  }
-}
 
-onMounted(() => {
-  fetchTodos(); // Fetch todos when the component is mounted
-});
 </script>
 
 <template>
@@ -85,8 +65,9 @@ onMounted(() => {
       You are now logged in!
     </h1>
     <div class="mt-4 border border-[#E1E4EA] rounded-[10px] w-2/4 p-4 mx-auto text-sm font-medium items-center">
-      <div class="flex items-center justify-center gap-4">
-        <form @submit.prevent="addTodo">
+      <div class="grid items-center justify-center gap-4">
+         <h3>Total Todos: {{ todoCount }}</h3>
+         <form>
           <label>
             New Todo:
             <input class="border h-7" v-model="newTodo" type="text" />
@@ -95,10 +76,10 @@ onMounted(() => {
         </form>
       </div>
       <ul>
-        <li v-for="todo in todos" :key="todo.id">
+        <li v-for="todo in todoStore.todos" :key="todo.id">
           {{ todo.text }}
           <button @click="deleteTodo(todo.id)" class=" bg-red-700  text-white font-medium rounded-full cursor-pointer items-center mx-auto mt-4">Delete Todo</button>
-        </li>
+        </li> 
       </ul>
     </div>
   </div>

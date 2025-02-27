@@ -3,7 +3,7 @@ export default defineNuxtConfig({
   css: ['~/assets/css/tailwind.css', '~/assets/css/main.css'],
 
   modules: [
-    '@nuxtjs/tailwindcss',
+    '@nuxtjs/tailwindcss', '@pinia/nuxt',
     ['nuxt-vuefire', {
       config: {
         apiKey: "AIzaSyDTbLZTdMPftm7kVvc2XxzyldGUEK1IaNs",
@@ -16,7 +16,7 @@ export default defineNuxtConfig({
       }
     }]
   ],
-
+ 
   plugins: ['~/plugins/firebase.js'],
-  compatibilityDate: "2025-02-20",
+  compatibilityDate: "2025-02-26",
 });

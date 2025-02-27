@@ -349,7 +349,7 @@
       @click="toggleAnswer('dropdown6')"
     >  
       <span class="flex gap-2">
-        <img src="public/vector.svg" >
+        <img src="/Vector.svg" />
         What file formats are supported for document uploads?</span>
       <svg
         :class="{'rotate-180': isOpen, 'rotate-0': !isOpen}"
@@ -481,10 +481,10 @@
       class="bg-[#0C1431] flex flex-col items-center justify-center h-auto md:mt-24 mt-6 relative sm/md:w-full"
     >
       <div
-        class="bg-contain bg-no-repeat h-[924px] w-[100%]"
+        class="flex items-center justify-center bg-cover bg-bottom sm:bg-center bg-no-repeat py-16 min-h-[500px] sm:min-h-[624px] w-[100%]"
         style="background-image: url('/withgradient.png')"
-      ></div>
-      <div class="max-w-[769px] absolute md/lg:top-[500px] top-44">
+      >
+      <div class="max-w-[769px] mx-auto md/lg:top-[500px] top-44">
         <h1
           class="text-center text-3xl md:text-4xl font-semibold text-white lg:text-6xl leading-10 lg:leading-[74px]"
         >
@@ -521,6 +521,7 @@
           </svg>
         </button>
       </div>
+    </div>
       <div
         class="md:mt-[90px] top-0 w-[85%] h-[136px] grid text-white font-normal text-[16px] font-[inter,sans-serif] relative"
       >
