@@ -20,6 +20,7 @@ export default defineEventHandler(async (event) => {
   if (method === 'GET') {
     const querySnapshot = await getDocs(collection(db, 'todos'));
     const todos = querySnapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
+    
     return todos;
   }
 
@@ -30,6 +31,7 @@ export default defineEventHandler(async (event) => {
       completed: false,
       createdAt: new Date()
     });
+
     return { id: docRef.id, text: body.text, completed: false, createdAt: new Date() };
   }
 
